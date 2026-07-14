@@ -19,4 +19,11 @@ class StringCalculatorTest {
 
         assertEquals(5, calculator.add("5"));
     }
+
+    @Test
+    void shouldReturnSumOfCommaSeparatedNumbers() {
+        StringCalculator calculator = new StringCalculator();
+
+        assertEquals(3, calculator.add("1,2"));
+    }
 }
