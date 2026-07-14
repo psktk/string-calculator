@@ -12,4 +12,11 @@ class StringCalculatorTest {
 
         assertEquals(0, calculator.add(""));
     }
+
+    @Test
+    void shouldReturnSingleNumber() {
+        StringCalculator calculator = new StringCalculator();
+
+        assertEquals(5, calculator.add("5"));
+    }
 }
